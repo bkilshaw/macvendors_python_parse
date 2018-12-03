@@ -17,6 +17,7 @@ def main():
 			for line in fp:
 				line = line.strip()
 				output = line + ',' + query_macvendors(line)
+				print(output)
 				results_handler.write('%s\n' % output)
 				time.sleep(1)
 
